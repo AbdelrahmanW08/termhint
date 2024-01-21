@@ -1,7 +1,7 @@
 body{
     margin: 0; 
     padding: 0;
-    background: #19161c;
+    background: #EFEFEF;
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
@@ -18,18 +18,18 @@ body{
     width: 80px;
     height: 80px;
     background: none;
-    border: 4px solid #ffd52d;
+    border: 4px solid #222831;
     border-radius: 50px;
     box-sizing: border-box;
-    font-family: Comic Sans MS;
+    font-family: sans-serif;
     font-size: 26px;
-    color: #ffd52d;
+    color: #222831;
     outline: none;
     transition: .5s;
 }
 .box:hover input{
-    width: 350px;
-    background: #3b3640;
+    width: 500px;
+    background: white;
     border-radius: 10px;
 }
 .box i{
@@ -38,7 +38,7 @@ body{
     right: 15px;
     transform: translate(-50%,-50%);
     font-size: 26px;
-    color: #ffd52d;
+    color: #1D1F21;
     transition: .2s;
 }
 .box:hover i{
@@ -50,13 +50,42 @@ body{
 
 h1{
     font-size: 40px;
-    color: #ffd52d;
+    color: #222831;
     font-weight: bold;
+    font-family: sans-serif;
 }
 a{
     padding: 30px;
-    background-color: #ffd52d;
+    background-color: #222831;
+    color: #EFEFEF;
     border-radius: 15px;
     font-size: 20px;
     font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
 }
+a:hover{
+    background-color: #262e39;
+}
+
+table {
+    border-collapse: collapse;
+    /*width: 100%;*/
+  }
+  
+  td {
+    text-align: left;
+    padding: 8px;
+    color: #222831;
+    font-family: sans-serif;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    text-align: left;
+    padding: 8px;
+    background-color: #222831;
+    color: white;
+    font-family: sans-serif;
+  }

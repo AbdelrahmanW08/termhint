@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body>
-        <h1>THIS IS OUR WORD -> {{ anwser }}</h1>
+        <h1>Words you are thinking of:</h1>
+
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Word</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in anwser %}
+                    <tr>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.word }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
         <a href='/'>Search Another Word</a>
+    
         <!--<div class="box">
             <form name="search" action="/geto/" method="post">
                 <input type="text" class="input" id="search_text" name="txt" onmouseout="this.value = ''; this.blur();">
